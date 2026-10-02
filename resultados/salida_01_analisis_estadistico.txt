@@ -1,0 +1,61 @@
+====================================================================================================
+FICHA DE REGISTRO (A) — saldos de CIERRE de cada año (criterio de contraste, Tabla 2)
+====================================================================================================
+       PPI   PPC   PPP    CCE   ROA   ROE
+Anio                                     
+2020 20.81  6.38 35.57  -8.38 22.57 32.23
+2021 19.56  4.58 28.12  -3.97 26.68 36.42
+2022 21.07 12.87 30.88   3.06 19.39 25.54
+2023 18.56 18.51 57.20 -20.13 12.70 17.97
+2024 20.57 16.95 46.78  -9.25 16.33 22.04
+2025 17.60 12.20 51.95 -22.16 22.58 32.62
+
+====================================================================================================
+FICHA DE REGISTRO (B) — saldos PROMEDIO (inicio+fin)/2 (Ross et al., 2019) -> VERSIÓN PRINCIPAL
+====================================================================================================
+       PPI   PPC   PPP    CCE   ROA   ROE
+Anio                                     
+2020 19.62  6.80 32.54  -6.12 22.57 32.23
+2021 17.97  4.82 28.05  -5.27 26.68 36.42
+2022 19.47  8.74 28.29  -0.08 19.39 25.54
+2023 18.87 16.01 42.65  -7.78 12.70 17.97
+2024 17.48 15.50 45.56 -12.58 16.33 22.04
+2025 17.15 12.50 44.96 -15.31 22.58 32.62
+
+====================================================================================================
+ESTADÍSTICA DESCRIPTIVA (2020-2025, n=6) — sobre la versión de saldos PROMEDIO
+====================================================================================================
+     n  Media  Desv.Est.  Mínimo  Máximo  CV (%)
+PPI  6  18.43       1.04   17.15   19.62    5.67
+PPC  6  10.73       4.65    4.82   16.01   43.36
+PPP  6  37.01       8.30   28.05   45.56   22.43
+CCE  6  -7.86       5.44  -15.31   -0.08   69.30
+ROA  6  20.04       5.00   12.70   26.68   24.94
+ROE  6  27.80       7.10   17.97   36.42   25.54
+
+====================================================================================================
+PRUEBA DE NORMALIDAD DE SHAPIRO-WILK (H0: la serie proviene de una distribución normal)
+====================================================================================================
+PPI     W = 0.9106   p = 0.4405   -> Normal (p>0.05)
+PPC     W = 0.9191   p = 0.4991   -> Normal (p>0.05)
+PPP     W = 0.8224   p = 0.0926   -> Normal (p>0.05)
+CCE     W = 0.9711   p = 0.9000   -> Normal (p>0.05)
+ROA     W = 0.9721   p = 0.9060   -> Normal (p>0.05)
+ROE     W = 0.9437   p = 0.6892   -> Normal (p>0.05)
+
+====================================================================================================
+CORRELACIONES BIVARIADAS (alfa = 0.05) — criterios de magnitud de Cohen (1988)
+====================================================================================================
+[HE1] PPI  vs ROA   (Pearson )  r = -0.140   p = 0.7909   -> No significativa, asociación negativa débil
+[HE1] PPI  vs ROE   (Pearson )  r = -0.164   p = 0.7566   -> No significativa, asociación negativa débil
+[HE2] PPC  vs ROA   (Pearson )  r = -0.859   p = 0.0284   -> Significativa, asociación negativa fuerte
+[HE2] PPC  vs ROE   (Pearson )  r = -0.816   p = 0.0478   -> Significativa, asociación negativa fuerte
+[HE3] PPP  vs ROA   (Pearson )  r = -0.569   p = 0.2384   -> No significativa, asociación negativa fuerte
+[HE3] PPP  vs ROE   (Pearson )  r = -0.488   p = 0.3266   -> No significativa, asociación negativa moderada
+[HG] CCE  vs ROA   (Pearson )  r = +0.107   p = 0.8398   -> No significativa, asociación positiva débil
+[HG] CCE  vs ROE   (Pearson )  r = +0.015   p = 0.9772   -> No significativa, asociación positiva trivial / nula
+
+Archivos generados en ./resultados/:
+ - ficha_saldo_cierre.csv, ficha_saldo_promedio.csv
+ - descriptivos.csv, shapiro_wilk.csv, correlaciones.csv, matriz_correlacion_pearson.csv
+ - mapa_calor_correlaciones.png, evolucion_cce_rentabilidad.png

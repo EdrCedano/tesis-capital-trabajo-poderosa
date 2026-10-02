@@ -1,0 +1,9 @@
+Hipotesis,Var1,Var2,Metodo,r,p,Magnitud,Direccion,Significancia
+HE1,PPI,ROA,Pearson,-0.1403,0.7909,débil,negativa,No significativa
+HE1,PPI,ROE,Pearson,-0.1637,0.7566,débil,negativa,No significativa
+HE2,PPC,ROA,Pearson,-0.8589,0.0284,fuerte,negativa,Significativa
+HE2,PPC,ROE,Pearson,-0.8158,0.0478,fuerte,negativa,Significativa
+HE3,PPP,ROA,Pearson,-0.5692,0.2384,fuerte,negativa,No significativa
+HE3,PPP,ROE,Pearson,-0.4876,0.3266,moderada,negativa,No significativa
+HG,CCE,ROA,Pearson,0.1072,0.8398,débil,positiva,No significativa
+HG,CCE,ROE,Pearson,0.0152,0.9772,trivial / nula,positiva,No significativa
