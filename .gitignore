@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 .venv/
 .DS_Store
+
+# Documento de la tesis (no se publica)
+*.docx
+~$*
